@@ -5,7 +5,7 @@
   "repository": "git@github.com:kaplanmaxe/colossal-stellar.git",
   "author": "Max Kaplan <kaplanmaxe3@gmail.com>",
   "scripts": {
-    "test": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.j",
+    "test": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "build": "gulp transpile-module",
     "build:watch": "gulp"
   },

@@ -1,0 +1,26 @@
+{
+  "name": "colossal-stellar",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com:kaplanmaxe/colossal-stellar.git",
+  "author": "Max Kaplan <kaplanmaxe3@gmail.com>",
+  "scripts": {
+    "test": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.j",
+    "build": "gulp transpile-module",
+    "build:watch": "gulp"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-kaplankomputing": "^1.0.2",
+    "coveralls": "^3.0.0",
+    "eslint-config-kaplankomputing": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "jest": "^22.1.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.83.0",
+    "stellar-sdk": "^0.8.0"
+  }
+}
